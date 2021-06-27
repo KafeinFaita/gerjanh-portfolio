@@ -1,0 +1,179 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+p,
+a {
+  font-family: "Roboto", sans-serif;
+}
+
+a {
+  text-decoration: none;
+  color: black;
+}
+
+a:visited {
+  color: black;
+}
+
+a:hover {
+  font-weight: bold;
+  transition: ease 0.3ms;
+  color: rgb(128, 0, 75);
+}
+
+h1,
+h2,
+h3 {
+  font-family: "Roboto Slab", serif;
+}
+
+.menu-bar {
+  display: flex;
+  justify-content: space-between;
+  padding: 20px;
+  align-items: center;
+  border-bottom: 2px solid black;
+}
+
+.menu-links {
+  display: flex;
+}
+
+.menu-links li {
+  list-style-type: none;
+  margin-right: 25px;
+  font-family: "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
+  font-size: 24px;
+}
+
+.logo {
+  height: 65px;
+}
+
+.banner-div {
+  display: flex;
+  justify-content: center;
+  overflow: hidden;
+}
+
+.about-div {
+  display: flex;
+  justify-content: space-around;
+  padding: 20px;
+  background-color: papayawhip;
+}
+
+.pic {
+  height: 500px;
+  border-radius: 50%;
+}
+
+.about-desc,
+.about-img {
+  flex: 1;
+}
+
+.about-desc {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  text-align: center;
+  margin: 0 100px 0 100px;
+}
+
+.about-desc h1 {
+  margin-bottom: 40px;
+}
+
+.about-img {
+  text-align: center;
+  max-width: 100%;
+}
+
+.artworks-div {
+  display: flex;
+  justify-content: space-around;
+  flex-flow: wrap;
+  padding: 30px 0 0 0;
+}
+
+.artworks-div hr {
+  width: 100%;
+  border: none;
+}
+
+.artworks-div h3 {
+  margin: 10px 0 10px 0;
+}
+
+.artwork-card {
+  max-width: 338px;
+  display: flex;
+  flex-direction: column;
+  text-align: center;
+  margin: 30px 0 30px 0;
+}
+
+.artwork-card-wide {
+  max-width: 600px;
+  display: flex;
+  flex-direction: column;
+  text-align: center;
+  margin: 30px 0 30px 0;
+}
+
+.artwork-img {
+  height: 450px;
+}
+
+.artwork-graphite {
+  width: 100%;
+  display: flex;
+  justify-content: space-around;
+  flex-wrap: wrap;
+  margin-top: 50px;
+  background-color: papayawhip;
+  padding: 30px 0 30px 0;
+}
+
+.artwork-graphite img {
+  height: 300px;
+  margin-bottom: 10px;
+}
+
+#graphites {
+  margin-bottom: 30px;
+}
+
+.footer {
+  text-align: center;
+  margin: 30px 0 30px 0;
+}
+
+.footer i {
+  font-size: 80px;
+  margin: 0 30px 0 30px;
+}
+
+.footer h2 {
+  margin-bottom: 20px;
+}
+
+@media only screen and (max-width: 900px) {
+  .menu-links {
+    display: none;
+  }
+}
+
+@media only screen and (max-width: 650px) {
+  .about-div {
+    display: block;
+  }
+
+  img {
+    max-width: 100%;
+  }
+}
